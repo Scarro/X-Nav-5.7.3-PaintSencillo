@@ -3,6 +3,13 @@ input {
   height: 25px;
 }
 
+#size {
+  width:auto;
+}
+.size {
+    width:auto;
+}
+
 #reset_image {
   width: 150px;
 }
