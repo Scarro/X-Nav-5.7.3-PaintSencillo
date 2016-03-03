@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--
   Based on HTML5 for Publishers (O'Reilly book)
-  http://examples.oreilly.com/0636920024273/
+  http://examples.oreilly.com/0636920022473/
 -->
 <html>
   <head>
@@ -11,8 +11,8 @@
     <meta charset="utf-8"/>
   </head>
   <body>
-    <h2>Un Paint algo mas complicado</h2>
     <div>
+      <h3>Un Paint algo más complicado</h3>
       <canvas id="canvas" width="500" height="500">
         Tu navegador no soporta canvas de HTML 5. 
       </canvas>
@@ -20,7 +20,7 @@
     <div>
       <h1>Un sencillo Paint con HTML5</h1>
       <p>Pulsa para seleccionar un color abajo y luego desplaza el puntero con el botón del ratón apretado sobre el canvas para dibujar.</p>
-      <p>Color elegido: <span id="color_chosen">Black</span></p>
+      <p> <span class="selected">Color elegido:</span> <span id="color_chosen">Black</span></p>
       <p>
         <input type="button" id="Red"/>
         <input type="button" id="Green"/>
@@ -31,12 +31,11 @@
       <p>
         <input type="button" id="reset_image" value="Borrar"/>
       </p>
-      <p>Seleccione un tamaño para dibujar</p>
       <p>
-        <input type="text" class="size" placeholder="Introduce tamaño"/>
-        <input id="size" type="submit" value="Enviar tam"/>
-    </p>
-      <p>Tamaño elegido: <span id="size_chosen">7</span></p>
+        <input id="size" class="size_button" type="text" placeholder="Escriba tamaño..."/>
+        <input id="sizebutton" class="size_button" type="submit" value="Cambiar"/>
+      </p>
+      <p><span class="selected">Tamaño seleccionado:</span> <span id="size_chosen">  7</span></p>
     </div>
   </body>
 </html>

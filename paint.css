@@ -2,12 +2,14 @@ input {
   width: 25px;
   height: 25px;
 }
-
-#size {
-  width:auto;
+.selected {
+	text-decoration: underline;
+	font-size:18px;
+	color:red;
 }
-.size {
-    width:auto;
+
+.size_button{
+	width:auto;
 }
 
 #reset_image {
